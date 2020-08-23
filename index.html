@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Baby Sleep Quiz</h1>
+    </header>
+    <main>
+        <div class="welcome-page">Welcome Screen
+            <form name="quiz-start">
+                <p>Welcome to my quiz on baby sleep. Find out how much you know about how babies sleep.</p>
+                <button type="submit">Start Quiz</button>
+            </form>
+        </div>
+        <div class="question-page">Question Screen
+            <p class="question-number">Question [] of []</p>
+            <p class="score">Answered [] correct out of []</p>
+            <form name="quiz-question">
+                <p class="question">This is the first question?</p>
+                <ol type="a" class="quiz-answers">
+                    <li><input type="radio" name="questions" id="option1" required> 
+                        <label for="option1">answer 1</label></li>
+                    <li><input type="radio" name="questions" id="option2" required> 
+                        <label for="option2">answer 2</label></li>
+                    <li><input type="radio" name="questions" id="option3" required> 
+                        <label for="option3">answer 3</label></li>
+                    <li><input type="radio" name="questions" id="option4" required> 
+                        <label for="option4">answer 4</label></li>
+                </ol>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="feedback-page">Feedback Screen
+            <form name="feedback-container">
+                <p class="feedback-text">Your answer was correct! Nice job.</p>
+                <button class="next">Next Question</button>
+            </form>
+        </div>
+        <div class="results-page">Results Screen
+            <form name="results">
+                <h2>Results</h2>
+                <p class="results-text">Your final score was [] correct out of []. Thanks for taking my quiz. If you would like to try again, please click the button below: </p>
+                <button class="restart">Start Over</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
